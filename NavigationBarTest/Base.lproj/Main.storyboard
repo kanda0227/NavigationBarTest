@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z65-ol-rg8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nG8-W2-pyv">
+            <objects>
+                <navigationController id="Z65-ol-rg8" sceneMemberID="viewController">
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oip-xA-Tiz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D2d-sO-qum" kind="relationship" relationship="rootViewController" id="wYZ-b0-M22"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVz-R0-NXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eOU-2a-rS4">
+            <objects>
+                <viewController id="D2d-sO-qum" customClass="ViewController" customModule="NavigationBarTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pz3-r6-MSI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="susuki" highlightedImage="susuki2" translatesAutoresizingMaskIntoConstraints="NO" id="pVo-q9-rAV" userLabel="Image View">
+                                <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="an_cat" highlightedImage="an_cat2" translatesAutoresizingMaskIntoConstraints="NO" id="do2-IT-gm3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="do2-IT-gm3" firstAttribute="leading" secondItem="Pz3-r6-MSI" secondAttribute="leading" id="3a8-fW-wa6"/>
+                            <constraint firstItem="pVo-q9-rAV" firstAttribute="trailing" secondItem="hvC-eF-fEr" secondAttribute="trailing" id="GKj-25-cQy"/>
+                            <constraint firstItem="do2-IT-gm3" firstAttribute="trailing" secondItem="hvC-eF-fEr" secondAttribute="trailing" id="eHL-wM-ZWE"/>
+                            <constraint firstItem="pVo-q9-rAV" firstAttribute="bottom" secondItem="hvC-eF-fEr" secondAttribute="bottom" constant="-50" id="gkj-4D-P3L"/>
+                            <constraint firstItem="do2-IT-gm3" firstAttribute="top" secondItem="hvC-eF-fEr" secondAttribute="top" constant="-64" id="iV1-vO-JM4"/>
+                            <constraint firstItem="pVo-q9-rAV" firstAttribute="top" secondItem="hvC-eF-fEr" secondAttribute="top" id="lIP-lf-1HB"/>
+                            <constraint firstItem="hvC-eF-fEr" firstAttribute="bottom" secondItem="do2-IT-gm3" secondAttribute="bottom" constant="50" id="sNv-vJ-xBF"/>
+                            <constraint firstItem="pVo-q9-rAV" firstAttribute="leading" secondItem="Pz3-r6-MSI" secondAttribute="leading" id="tpP-hv-YMj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hvC-eF-fEr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oNf-Cv-D5y"/>
+                    <connections>
+                        <outlet property="imageView" destination="do2-IT-gm3" id="Lna-DU-qiw"/>
+                        <outlet property="imageView2" destination="pVo-q9-rAV" id="Jsg-J0-vOX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sb6-H6-XMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="an_cat" width="800" height="600"/>
+        <image name="an_cat2" width="4032" height="3024"/>
+        <image name="susuki" width="1024" height="576"/>
+        <image name="susuki2" width="576" height="1024"/>
+    </resources>
+</document>
